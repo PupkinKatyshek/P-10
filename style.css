@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  color: #000000;
+  overflow-x: hidden;
+  max-width: 100%;
+  height: 100%;
+}
+
+.capsula {
+  width: 660px;
+  min-height: 763px;
+  background-color: #c4c4c4;
+  padding: 62px 84px 72px 77px;
+  margin: 0 auto;
+}
+
+#search-input {
+  width: 500px;
+  height: 61px;
+  font-weight: 400;
+  font-size: 48px;
+  color: #000000;
+  padding: 5px 0 0 13px;
+  font-family: "Roboto", serif;
+}
+
+.finding {
+  border: 1px solid #ccc;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 45px 0;
+}
+
+.finding li {
+  padding: 10px;
+  cursor: pointer;
+  border: 2px solid #000000;
+  background-color: #e3e3e3;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35.16px;
+}
+
+.finding li:hover {
+  background-color: #65cdf9;
+  transition: background-color 0.3s;
+}
+
+.search-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #e27beb;
+  border: 2px solid #000000;
+  height: 101px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
+.delete-btn {
+  all: unset;
+  position: relative;
+}
+
+.delete-btn::after {
+  content: "";
+  width: 4px;
+  height: 60px;
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  rotate: 140deg;
+  background-color: #ff0000;
+  cursor: pointer;
+}
+
+.delete-btn::before {
+  content: "";
+  width: 4px;
+  height: 60px;
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  rotate: 220deg;
+  background-color: #ff0000;
+  cursor: pointer;
+}
